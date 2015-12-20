@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/camon85/BootBase.png?label=ready&title=Ready)](https://waffle.io/camon85/BootBase)
 # spring boot base
 
 ## profile
