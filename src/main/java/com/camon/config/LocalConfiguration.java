@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile({"default", "local"})
 @Slf4j
-public class LocalConfiguration {
+public class LocalConfiguration extends CommonConfiguration {
     static {
-        log.info("### local");
+        log.info("### LocalConfiguration");
     }
 
 }

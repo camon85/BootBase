@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("development")
 @Slf4j
-public class DevelopmentConfiguration {
+public class DevelopmentConfiguration extends CommonConfiguration {
     static {
-        log.info("### development");
+        log.info("### DevelopmentConfiguration");
     }
 
 }
