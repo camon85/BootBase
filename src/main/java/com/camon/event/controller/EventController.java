@@ -5,6 +5,7 @@ package com.camon.event.controller;
  */
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -13,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class EventController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String dd() {
+    public String list(Model model) {
+        model.addAttribute("msg", "hello");
         return "event/list";
     }
 
